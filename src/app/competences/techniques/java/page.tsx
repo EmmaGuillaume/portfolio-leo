@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="md:px-28 px-8">
       <Competences
+        logo="/images/java.png"
         title="Java"
         presentation={[
           "Java est un langage de programmation orienté objet, robuste et polyvalent, créé par Sun Microsystems en 1995 et désormais maintenu par Oracle. Connu pour sa portabilité, Java fonctionne sur le principe du 'Write Once, Run Anywhere' (WORA), ce qui signifie qu’un programme écrit en Java peut s’exécuter sur n’importe quelle plateforme dotée de la machine virtuelle Java (JVM).",

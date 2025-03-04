@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="md:px-28 px-8">
       <Competences
+        logo="/images/git.png"
         title="Git"
         presentation={[
           "Git est un système de contrôle de version distribué largement utilisé pour suivre les modifications de fichiers dans le développement de logiciels. Il a été créé par Linus Torvalds en 2005 pour gérer le développement du noyau Linux. Git permet à plusieurs développeurs de collaborer sur des projets, de fusionner des modifications et de suivre l'historique des versions.",

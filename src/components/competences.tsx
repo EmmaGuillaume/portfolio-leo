@@ -7,6 +7,7 @@ import {
   Rocket,
   SquareDashedMousePointer,
 } from "lucide-react";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -17,6 +18,7 @@ type Props = {
   conseils: string[];
   projet: string[];
   importance: string[];
+  logo: string;
 };
 
 export default function Competences({
@@ -28,17 +30,32 @@ export default function Competences({
   conseils,
   projet,
   importance,
+  logo,
 }: Props) {
   return (
     <section className="my-36">
-      <h1 className=" text-center text-3xl">{title}</h1>
+      <div className="w-full flex flex-col items-center">
+        <h1 className=" text-center text-4xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
+          {title}
+        </h1>
+
+        <Image
+          src={logo}
+          alt="logo"
+          width={100}
+          height={100}
+          className="max-w-20 w-full mt-2"
+        />
+      </div>
+
       <section className="justify-center items-start  relative">
         <section className=" flex flex-col gap-8 mt-8">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 bg-white p-8 rounded-lg shadow-lg">
             <div className="flex gap-2 items-center">
               <Presentation className="w-4" />
-              <h2 className="text-xl w-fit whitespace-nowrap">Présentation</h2>
-              <div className="h-[1px] w-full bg-black invisible md:visible" />
+              <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
+                Présentation
+              </h2>
             </div>
 
             {presentation.map((text, index) => (
@@ -46,67 +63,72 @@ export default function Competences({
             ))}
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 bg-white p-8 rounded-lg shadow-lg">
             <div className="flex gap-2 items-center">
               <SquareDashedMousePointer className="w-4" />
-              <h2 className="text-xl w-fit whitespace-nowrap">Utilisation</h2>
-              <div className="h-[1px] w-full bg-black invisible md:visible" />
+              <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
+                Utilisation
+              </h2>
             </div>
             {utilisations.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
-          <div className="flex flex-col gap-2">
+
+          <div className="flex flex-col gap-2 bg-white p-8 rounded-lg shadow-lg">
             <div className="flex gap-2 items-center">
               <GraduationCap className="w-4" />
-              <h2 className="text-xl w-fit whitespace-nowrap">Maîtrise</h2>
-              <div className="h-[1px] w-full bg-black invisible md:visible" />
+              <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
+                Maîtrise
+              </h2>
             </div>
             {maitrise.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
-          <div className="flex flex-col gap-2">
+
+          <div className="flex flex-col gap-2 bg-white p-8 rounded-lg shadow-lg">
             <div className="flex gap-2 items-center">
               <BookOpen className="w-4" />
-              <h2 className="text-xl w-fit whitespace-nowrap">
+              <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
                 Formation en cours
               </h2>
-              <div className="h-[1px] w-full bg-black invisible md:visible" />
             </div>
             {formation.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
-          <div className="flex flex-col gap-2">
+
+          <div className="flex flex-col gap-2 bg-white p-8 rounded-lg shadow-lg">
             <div className="flex gap-2 items-center">
               <Megaphone className="w-4" />
-              <h2 className="text-xl w-fit whitespace-nowrap">Conseils</h2>
-              <div className="h-[1px] w-full bg-black invisible md:visible" />
+              <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
+                Conseils
+              </h2>
             </div>
             {conseils.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
-          <div className="flex flex-col gap-2">
+
+          <div className="flex flex-col gap-2 bg-white p-8 rounded-lg shadow-lg">
             <div className="flex gap-2 items-center">
               <BriefcaseBusiness className="w-5" />
-              <h2 className="text-xl w-fit whitespace-nowrap">
+              <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
                 Projet personnel-professionnel
               </h2>
-              <div className="h-[1px] w-full bg-black invisible md:visible" />
             </div>
             {projet.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
-          <div className="flex flex-col gap-2">
+
+          <div className="flex flex-col gap-2 bg-white p-8 rounded-lg shadow-lg">
             <div className="flex gap-2 items-center">
               <Rocket className="w-5" />
-              <h2 className="text-xl w-fit whitespace-nowrap">
+              <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
                 Importance de cette compétence
               </h2>
-              <div className="h-[1px] w-full bg-black invisible md:visible" />
             </div>
             {importance.map((text, index) => (
               <p key={index}>{text}</p>

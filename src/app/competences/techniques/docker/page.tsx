@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="md:px-28 px-8">
       <Competences
+        logo="/images/docker.png"
         title="Docker"
         presentation={[
           "Docker est une plateforme open-source qui permet de développer, expédier et exécuter des applications à l’aide de conteneurs. Ces derniers encapsulent une application et toutes ses dépendances, garantissant ainsi qu’elle fonctionne de manière identique, quel que soit l’environnement d’exécution. Docker est devenu un outil incontournable pour les développeurs et les équipes DevOps, car il simplifie la gestion des environnements, améliore la portabilité des applications et accélère les cycles de déploiement.",

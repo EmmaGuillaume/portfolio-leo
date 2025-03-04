@@ -124,7 +124,7 @@ export default function Header() {
                           className="px-4 py-2  rounded-b-lg hover:text-transparent hover:font-bold"
                           href="/competences/humaines/pensee"
                         >
-                          Pensée
+                          Pensée critique
                         </Link>
                       </ul>
                     </div>

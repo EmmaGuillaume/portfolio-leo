@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="md:px-28 px-8">
       <Competences
+        logo="/images/anglais.png"
         title="Adaptabilité"
         presentation={[
           "L’adaptabilité est une compétence essentielle pour tout développeur. Elle consiste à s’adapter rapidement aux nouvelles technologies, aux méthodologies de travail et aux environnements techniques variés. Dans un domaine en constante évolution comme l’informatique, savoir apprendre de nouveaux langages, outils ou frameworks est indispensable pour rester pertinent et efficace.",

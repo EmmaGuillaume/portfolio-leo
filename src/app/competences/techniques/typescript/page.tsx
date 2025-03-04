@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="md:px-28 px-8">
       <Competences
+        logo="/images/typescript.png"
         title="TypeScript"
         presentation={[
           "TypeScript est un sur-ensemble de JavaScript qui ajoute un typage statique et des fonctionnalités de programmation orientée objet (POO). Créé par Microsoft en 2012, TypeScript permet aux développeurs de créer des applications robustes, maintenables et évolutives. Il se compile en JavaScript pur, ce qui le rend compatible avec tous les navigateurs et environnements qui supportent JavaScript.",

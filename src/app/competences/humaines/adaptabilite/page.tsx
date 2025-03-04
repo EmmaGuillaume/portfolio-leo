@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="md:px-28 px-8">
       <Competences
+        logo="/images/adaptabilite.png"
         title="Anglais"
         presentation={[
           "L’anglais est une compétence essentielle dans le domaine du développement, que ce soit pour la communication avec des collègues, la lecture de documentation technique ou l’apprentissage de nouvelles technologies. Aujourd’hui, la majorité des ressources, des tutoriels et des documentations sont disponibles en anglais, ce qui en fait une langue incontournable pour tout développeur.",

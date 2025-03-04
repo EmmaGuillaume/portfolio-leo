@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="md:px-28 px-8">
       <Competences
+        logo="/images/autonomie.png"
         title="Autonomie"
         presentation={[
           "L’autonomie, dans le domaine du développement, est la capacité à apprendre, résoudre des problèmes et avancer sur un projet sans supervision constante. Elle est essentielle pour gagner en efficacité et en productivité, tout en restant adaptable aux défis rencontrés. Être autonome ne signifie pas travailler seul en permanence, mais savoir prendre des initiatives et rechercher des solutions par soi-même avant de solliciter de l’aide.",

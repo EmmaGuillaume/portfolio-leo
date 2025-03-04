@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="md:px-28 px-8">
       <Competences
+        logo="/images/kubernetes.png"
         title="Kubernetes"
         presentation={[
           "Kubernetes est une plateforme open-source conçue pour automatiser le déploiement, la mise à l’échelle et la gestion des applications conteneurisées. Créée par Google, Kubernetes est devenue une référence incontournable pour orchestrer des conteneurs à grande échelle. Elle permet de répartir les charges, de surveiller les applications et de garantir leur disponibilité, tout en simplifiant la gestion des infrastructures complexes.",
