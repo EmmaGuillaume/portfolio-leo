@@ -1,3 +1,13 @@
+import {
+  BookOpen,
+  BriefcaseBusiness,
+  GraduationCap,
+  Megaphone,
+  Presentation,
+  Rocket,
+  SquareDashedMousePointer,
+} from "lucide-react";
+
 type Props = {
   title: string;
   presentation: string[];
@@ -23,47 +33,81 @@ export default function Competences({
     <section className="my-36">
       <h1 className=" text-center text-3xl">{title}</h1>
       <section className="justify-center items-start  relative">
-        <div className="w-0.5 h-full absolute -left-8 top-0 bg-gray-100" />
         <section className=" flex flex-col gap-8 mt-8">
           <div className="flex flex-col gap-2">
-            <h2 className="text-xl">Présentation</h2>
+            <div className="flex gap-2 items-center">
+              <Presentation className="w-4" />
+              <h2 className="text-xl w-fit whitespace-nowrap">Présentation</h2>
+              <div className="h-[1px] w-full bg-black invisible md:visible" />
+            </div>
+
             {presentation.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
 
           <div className="flex flex-col gap-2">
-            <h2 className="text-xl">Utilisation</h2>
+            <div className="flex gap-2 items-center">
+              <SquareDashedMousePointer className="w-4" />
+              <h2 className="text-xl w-fit whitespace-nowrap">Utilisation</h2>
+              <div className="h-[1px] w-full bg-black invisible md:visible" />
+            </div>
             {utilisations.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="text-xl">Maîtrise</h2>
+            <div className="flex gap-2 items-center">
+              <GraduationCap className="w-4" />
+              <h2 className="text-xl w-fit whitespace-nowrap">Maîtrise</h2>
+              <div className="h-[1px] w-full bg-black invisible md:visible" />
+            </div>
             {maitrise.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="text-xl">Formation en cours</h2>
+            <div className="flex gap-2 items-center">
+              <BookOpen className="w-4" />
+              <h2 className="text-xl w-fit whitespace-nowrap">
+                Formation en cours
+              </h2>
+              <div className="h-[1px] w-full bg-black invisible md:visible" />
+            </div>
             {formation.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="text-xl">Conseils</h2>
+            <div className="flex gap-2 items-center">
+              <Megaphone className="w-4" />
+              <h2 className="text-xl w-fit whitespace-nowrap">Conseils</h2>
+              <div className="h-[1px] w-full bg-black invisible md:visible" />
+            </div>
             {conseils.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="text-xl">Projet personnel-professionnel</h2>
+            <div className="flex gap-2 items-center">
+              <BriefcaseBusiness className="w-5" />
+              <h2 className="text-xl w-fit whitespace-nowrap">
+                Projet personnel-professionnel
+              </h2>
+              <div className="h-[1px] w-full bg-black invisible md:visible" />
+            </div>
             {projet.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="text-xl">Importance de cette compétence</h2>
+            <div className="flex gap-2 items-center">
+              <Rocket className="w-5" />
+              <h2 className="text-xl w-fit whitespace-nowrap">
+                Importance de cette compétence
+              </h2>
+              <div className="h-[1px] w-full bg-black invisible md:visible" />
+            </div>
             {importance.map((text, index) => (
               <p key={index}>{text}</p>
             ))}

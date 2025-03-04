@@ -2,7 +2,7 @@ import Competences from "@/components/competences";
 
 export default function Home() {
   return (
-    <main className="px-28">
+    <main className="md:px-28 px-8">
       <Competences
         title="Java"
         presentation={[
