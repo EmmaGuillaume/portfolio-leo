@@ -100,7 +100,7 @@ export default function Competences({
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
                 <BookOpen className="w-4" />
-                <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-te font-bold xt text-transparent">
+                <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold text-transparent">
                   Formation en cours
                 </h2>
               </div>
