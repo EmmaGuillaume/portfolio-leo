@@ -11,26 +11,29 @@ import Image from "next/image";
 
 type Props = {
   title: string;
-  presentation: string[];
-  utilisations: string[];
-  maitrise: string[];
-  formation: string[];
-  conseils: string[];
-  projet: string[];
-  importance: string[];
-  logo: string;
+  missions: string[];
+  role: string[];
+  technologies: string[];
+  client: string[];
+  objectif: string[];
+  galerie: string[];
+  processus: string[];
+  conclusions: string[];
+
+  img: string;
 };
 
-export default function Competences({
+export default function Realisations({
   title,
-  presentation,
-  utilisations,
-  maitrise,
-  formation,
-  conseils,
-  projet,
-  importance,
-  logo,
+  missions,
+  role,
+  technologies,
+  client,
+  objectif,
+  galerie,
+  processus,
+  conclusions,
+  img,
 }: Props) {
   return (
     <section className="my-36">
@@ -40,8 +43,8 @@ export default function Competences({
         </h1>
 
         <Image
-          src={logo}
-          alt="logo"
+          src={img}
+          alt="img"
           width={100}
           height={100}
           className="max-w-20 w-full mt-2"
@@ -60,7 +63,7 @@ export default function Competences({
                 </h2>
               </div>
 
-              {presentation.map((text, index) => (
+              {missions.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
@@ -74,7 +77,7 @@ export default function Competences({
                   Utilisation
                 </h2>
               </div>
-              {utilisations.map((text, index) => (
+              {role.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
@@ -90,7 +93,7 @@ export default function Competences({
                   Maîtrise
                 </h2>
               </div>
-              {maitrise.map((text, index) => (
+              {technologies.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
@@ -101,10 +104,10 @@ export default function Competences({
               <div className="flex gap-2 items-center">
                 <BookOpen className="w-4" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold text-transparent">
-                  Formation en cours
+                  client en cours
                 </h2>
               </div>
-              {formation.map((text, index) => (
+              {client.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
@@ -117,10 +120,10 @@ export default function Competences({
               <div className="flex gap-2 items-center">
                 <Megaphone className="w-4" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold ">
-                  Conseils
+                  objectif
                 </h2>
               </div>
-              {conseils.map((text, index) => (
+              {objectif.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
@@ -131,10 +134,10 @@ export default function Competences({
               <div className="flex gap-2 items-center">
                 <BriefcaseBusiness className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
-                  Projet personnel-professionnel
+                  galerie personnel-professionnel
                 </h2>
               </div>
-              {projet.map((text, index) => (
+              {galerie.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
@@ -147,13 +150,25 @@ export default function Competences({
               <div className="flex gap-2 items-center">
                 <Rocket className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
-                  Importance de cette compétence
+                  processus de cette compétence
                 </h2>
               </div>
-              {importance.map((text, index) => (
+              {processus.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex gap-2 items-center">
+              <Rocket className="w-5" />
+              <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
+                Conclusion
+              </h2>
+            </div>
+            {conclusions.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
           </div>
         </section>
       </section>
