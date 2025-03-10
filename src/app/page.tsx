@@ -27,12 +27,12 @@ export default function Home() {
         </div>
       </section>
       <section className="mb-24  md:px-28 px-8 mt-24">
-        <div className="bg-white drop-shadow-lg px-24 py-10 rounded-xl">
+        <div className="bg-white drop-shadow-lg px-8 md:px-24 py-10 rounded-xl">
           <h2 className="text-2xl text-center mb-8 font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
             Qui suis-je ?
           </h2>
           <section className=" flex flex-col gap-8 ">
-            <div className="flex gap-8 flex-col md:flex-row">
+            <div className="flex gap-8 items-center flex-col md:flex-row">
               <Image
                 src={"/images/veigar.jpg"}
                 width={100}

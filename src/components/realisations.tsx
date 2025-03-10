@@ -1,11 +1,12 @@
 import {
-  BookOpen,
-  BriefcaseBusiness,
-  GraduationCap,
-  Megaphone,
-  Presentation,
+  Camera,
+  Goal,
+  HeartHandshake,
+  Laptop,
+  PencilLine,
   Rocket,
-  SquareDashedMousePointer,
+  ShieldEllipsis,
+  ShoppingCart,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -36,7 +37,7 @@ export default function Realisations({
   img,
 }: Props) {
   return (
-    <section className="my-36">
+    <section className="">
       <div className="w-full flex flex-col items-center">
         <h1 className=" text-center text-4xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
           {title}
@@ -53,13 +54,12 @@ export default function Realisations({
 
       <section className="justify-center items-start  relative">
         <section className=" flex flex-col gap-24 mt-24">
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="bg-gray-100 rounded-md w-full max-w-full min-h-32" />
+          <div className="flex flex-col  gap-8">
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
-                <Presentation className="w-4" />
+                <Goal className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
-                  Présentation
+                  Mission
                 </h2>
               </div>
 
@@ -69,28 +69,26 @@ export default function Realisations({
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex flex-col  gap-8">
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
-                <SquareDashedMousePointer className="w-4" />
+                <ShieldEllipsis className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold ">
-                  Utilisation
+                  Rôle
                 </h2>
               </div>
               {role.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
-            <div className="bg-gray-100 rounded-md w-full max-w-full min-h-32" />
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="bg-gray-100 rounded-md w-full max-w-full min-h-32" />
+          <div className="flex flex-col  gap-8">
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
-                <GraduationCap className="w-4" />
+                <Laptop className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold ">
-                  Maîtrise
+                  Technologies
                 </h2>
               </div>
               {technologies.map((text, index) => (
@@ -99,28 +97,26 @@ export default function Realisations({
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex flex-col  gap-8">
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
-                <BookOpen className="w-4" />
+                <ShoppingCart className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold text-transparent">
-                  client en cours
+                  Client
                 </h2>
               </div>
               {client.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
-            <div className="bg-gray-100 rounded-md w-full max-w-full min-h-32" />
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="bg-gray-100 rounded-md w-full max-w-full min-h-32" />
+          <div className="flex flex-col  gap-8">
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
-                <Megaphone className="w-4" />
+                <Goal className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold ">
-                  objectif
+                  Objectifs, contexte et enjeux
                 </h2>
               </div>
               {objectif.map((text, index) => (
@@ -129,28 +125,26 @@ export default function Realisations({
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex flex-col  gap-8">
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
-                <BriefcaseBusiness className="w-5" />
+                <Camera className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
-                  galerie personnel-professionnel
+                  La galerie de travaux
                 </h2>
               </div>
               {galerie.map((text, index) => (
                 <p key={index}>{text}</p>
               ))}
             </div>
-            <div className="bg-gray-100 rounded-md w-full max-w-full min-h-32" />
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="bg-gray-100 rounded-md w-full max-w-full min-h-32" />
+          <div className="flex flex-col  gap-8">
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center">
-                <Rocket className="w-5" />
+                <PencilLine className="w-5" />
                 <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
-                  processus de cette compétence
+                  Processus de développement
                 </h2>
               </div>
               {processus.map((text, index) => (
@@ -159,11 +153,25 @@ export default function Realisations({
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex flex-col  gap-8">
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-2 items-center">
+                <HeartHandshake className="w-5" />
+                <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
+                  Conclusion
+                </h2>
+              </div>
+              {processus.map((text, index) => (
+                <p key={index}>{text}</p>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-col  gap-8">
             <div className="flex gap-2 items-center">
               <Rocket className="w-5" />
               <h2 className="text-xl w-fit whitespace-nowrap bg-gradient-to-r from-pink-light to-purple-light bg-clip-text font-bold  text-transparent">
-                Conclusion
+                Compétences associées
               </h2>
             </div>
             {conclusions.map((text, index) => (

@@ -7,6 +7,7 @@ export default function Header() {
   const [isCompetencesVisible, setCompetencesVisible] = useState(false);
   const [isTechVisible, setTechVisible] = useState(false);
   const [isHumainesVisible, setHumainesVisible] = useState(false);
+  const [isRealisationsVisible, setRealisationsVisible] = useState(false);
 
   return (
     <div className="w-full md:px-28 px-8 py-2 flex flex-col md:flex-row justify-between fixed top-0 bg-white z-50 drop-shadow-sm">
@@ -134,7 +135,51 @@ export default function Header() {
             </div>
           )}
         </div>
-        <Link href="/realisations">Réalisations</Link>
+        <div
+          className="relative"
+          onMouseEnter={() => setRealisationsVisible(true)}
+          onMouseLeave={() => setRealisationsVisible(false)}
+        >
+          <Link href="#" className="">
+            Réalisations
+          </Link>
+          {isRealisationsVisible && (
+            <div className="absolute left-0 top-6 bg-white shadow-lg w-36 rounded-lg">
+              <ul className="flex flex-col bg-gradient-to-r from-pink-light to-purple-light bg-clip-text">
+                <Link
+                  className="px-4 py-2 rounded-t-lg hover:text-transparent hover:font-bold"
+                  href="/realisations/vidibio"
+                >
+                  Vidibio
+                </Link>
+                <Link
+                  className="px-4 py-2 rounded-t-lg hover:text-transparent hover:font-bold"
+                  href="/realisations/theseus"
+                >
+                  Theseus
+                </Link>
+                <Link
+                  className="px-4 py-2 rounded-t-lg hover:text-transparent hover:font-bold"
+                  href="/realisations/gava"
+                >
+                  Gava
+                </Link>
+                <Link
+                  className="px-4 py-2 rounded-t-lg hover:text-transparent hover:font-bold"
+                  href="/realisations/optivex"
+                >
+                  Optivex
+                </Link>
+                <Link
+                  className="px-4 py-2 rounded-t-lg hover:text-transparent hover:font-bold"
+                  href="/realisations/random"
+                >
+                  RANDOM
+                </Link>
+              </ul>
+            </div>
+          )}
+        </div>
         <Link href="#">Contact</Link>
       </div>
     </div>
