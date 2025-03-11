@@ -180,7 +180,7 @@ export default function Header() {
             </div>
           )}
         </div>
-        <Link href="#">Contact</Link>
+        <Link href="/contact">Contact</Link>
       </div>
     </div>
   );

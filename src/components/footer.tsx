@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="w-full px-16 py-2 border-t border-black">
+    <div className="w-full px-16 py-2 border-t border-black sticky bottom-0">
       <div className="flex justify-between">
         <div className="flex space-x-4">
           <Link href="/presentation">LinkedIn</Link>
