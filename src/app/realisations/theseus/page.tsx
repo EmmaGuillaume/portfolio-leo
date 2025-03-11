@@ -1,8 +1,9 @@
+import Card from "@/components/card";
 import Realisations from "@/components/realisations";
 
 export default function Realisation() {
   return (
-    <main className="scroll-smooth overflow-auto ">
+    <main className="scroll-smooth overflow-auto mb-28">
       <section className="pt-36 pb-24 md:px-28 px-8 ">
         <Realisations
           img="/images/veigar.jpg"
@@ -34,6 +35,38 @@ export default function Realisation() {
           ]}
         />
       </section>
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-8 mt-2 pb-12">
+        <Card
+          img="/images/autonomie.png"
+          titre="Autonomie"
+          href="/competences/humaines/autonomie"
+          text="Git est un système de contrôle..."
+        />
+        <Card
+          img="/images/flexibilite.png"
+          titre="Flexibilité"
+          href="/competences/humaines/flexibilite"
+          text="Git est un système de contrôle..."
+        />
+        <Card
+          img="/images/git.png"
+          titre="Git"
+          href="/competences/techniques/git"
+          text="Git est un système de contrôle..."
+        />
+        <Card
+          img="/images/typescript.png"
+          titre="Typescript"
+          href="/competences/techniques/typescript"
+          text="Git est un système de contrôle..."
+        />
+        <Card
+          img="/images/docker.png"
+          titre="Docker"
+          href="/competences/techniques/docker"
+          text="Git est un système de contrôle..."
+        />
+      </div>
     </main>
   );
 }

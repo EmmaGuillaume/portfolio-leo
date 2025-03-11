@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="scroll-smooth overflow-auto ">
-      <section className="mb-96 md:px-28 px-8 mt-24 flex flex-col items-center">
-        <h2 className="text-2xl text-center mb-8 font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
+    <main className="scroll-smooth overflow-auto mb-28">
+      <section className=" mb-96 md:px-28 px-8 mt-36 flex flex-col items-center">
+        <h2 className="text-3xl text-center mb-8 font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
           Pour me contacter
         </h2>
         <div className="mt-6 flex flex-col items-center w-full max-w-lg gap-4">

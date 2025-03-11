@@ -1,10 +1,11 @@
 import Card from "@/components/card";
+import CardRealisations from "@/components/card-realisations";
 import { Code, FolderOpen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
-    <main className="scroll-smooth overflow-auto ">
+    <main className="scroll-smooth overflow-auto mb-28">
       <section className="pt-36 pb-24 md:px-28 px-8 bg-gray-50">
         <h1 className=" text-center text-4xl bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent font-bold">
           Étudiant et développeur freelance
@@ -27,7 +28,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mb-24  md:px-28 px-8 mt-24">
-        <div className="bg-white drop-shadow-lg px-8 md:px-24 py-10 rounded-xl">
+        <div className=" px-8 md:px-24">
           <h2 className="text-2xl text-center mb-8 font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
             Qui suis-je ?
           </h2>
@@ -96,6 +97,29 @@ export default function Home() {
               </p>
             </div>
           </section>
+        </div>
+      </section>
+
+      <section id="competences" className="mb-24 md:px-28 px-8 pt-24">
+        <h1 className=" text-center text-3xl font-bold bg-gradient-to-r from-pink-light to-purple-light bg-clip-text text-transparent">
+          Réalisations
+        </h1>
+        <div className="mt-20 flex flex-col gap-8">
+          <CardRealisations
+            img="/images/mockup-leo.png"
+            titre="Theseus"
+            href="/realisations/theseus"
+            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
+            position="left"
+          />
+
+          <CardRealisations
+            img="/images/mockup-leo.png"
+            titre="Theseus"
+            href="/realisations/theseus"
+            text="In capital markets, every detail counts, and every second too. Yet, we are not machines and must be assisted by machines : Theseus refines data from your conversations to keep you focused, informed and relevant."
+            position="right"
+          />
         </div>
       </section>
 
